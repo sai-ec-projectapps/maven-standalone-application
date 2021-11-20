@@ -12,5 +12,5 @@ phases:
 reports:
   php-reports:
     files:
-      - "reports/php/*.xml"
+      - "report.json"
     file-format: "JUNITXML"
