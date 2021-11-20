@@ -8,8 +8,10 @@ phases:
     - echo Running tests 
     - mvn clean test
     - mvn clean package
+    - echo $CODEBUILD_SRC_DIR
 reports:
   php-reports:
     files:
-      - "reports/php/*.xml"
+      - '**/*'
     file-format: "JUNITXML"
+    base-directory: build/test-results/test
