@@ -1,34 +1,38 @@
-class TheFirstUnitTest {
+package com.mt.sample.test;
 
-    // declaring logger ... 
+import junit.framework.Test;
+import junit.framework.TestCase;
+import junit.framework.TestSuite;
 
-    @Test
-    void whenTestCase_thenPass() {
-        logger.info("Running a dummyTest");
-    }
-}
-
-class TheSecondUnitTest {
-
-    // declaring logger ... 
-
-    @Test
-    void whenTestCase1_thenPrintTest1_1() {
-        logger.info("Running When Case1: test1_1");
-    }
-
-    @Test
-    void whenTestCase1_thenPrintTest1_2() {
-        logger.info("Running When Case1: test1_2");
+/**
+ * Unit test for HelloWorld.
+ */
+public class HelloWorldTest 
+    extends TestCase
+{
+    /**
+     * Create the test case
+     *
+     * @param testName name of the test case
+     */
+    public HelloWorldTest( String testName )
+    {
+        super( testName );
     }
 
-    @Test
-    void whenTestCase1_thenPrintTest1_3() {
-        logger.info("Running When Case1: test1_3");
+    /**
+     * @return the suite of tests being tested
+     */
+    public static Test suite()
+    {
+        return new TestSuite( HelloWorldTest.class );
     }
 
-    @Test
-    void whenTestCase2_thenPrintTest2_1() {
-        logger.info("Running When Case2: test2_1");
+    /**
+     * Rigourous Test :-)
+     */
+    public void testApp()
+    {
+        assertTrue( true );
     }
 }
