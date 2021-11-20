@@ -12,5 +12,5 @@ phases:
 reports:
   php-reports:
     files:
-      - "report.json"
+      - "src/test/java/com/mt/sample/test/HelloWorldTest.java"
     file-format: "JUNITXML"
