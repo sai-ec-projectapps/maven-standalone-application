@@ -9,8 +9,8 @@ phases:
     - mvn clean test 
        
 reports:
-  shatestgroup:
+  arn:aws:codebuild:ap-south-1:091416694046:report-group/shatestgroup:
     files:
       - "**/*"
-    discard-paths: false
+    discard-paths: yes
     
