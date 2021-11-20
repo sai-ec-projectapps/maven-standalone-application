@@ -8,6 +8,8 @@ phases:
     - echo Running tests 
     - mvn clean test
     - mvn clean package
-artifacts:
-  files:
-    - '**/*'
+reports:
+  php-reports:
+    files:
+      - "reports/php/*.xml"
+    file-format: "JUNITXML"
