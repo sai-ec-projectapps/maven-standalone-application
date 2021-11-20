@@ -6,11 +6,11 @@ phases:
   build:
     commands:
     - echo Running tests 
-    - mvn test
-    - mvn clean package
-    
+    - mvn clean test 
+       
 reports:
-  php-reports:
+  testgroup:
     files:
-      - "src/test/java/com/mt/sample/test/HelloWorldTest.java"
-    file-format: "JUNITXML"
+      - "**/*"
+    discard-paths: false
+    
